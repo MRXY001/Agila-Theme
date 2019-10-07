@@ -2,6 +2,10 @@
 ##### A Sublime Text 3 UI Theme
 Couldn't find a theme I really dig, so I tried to make my own theme based on all the things/elements I like from wonderful themes I've used before. :)
 
+> 注：微调里面唯一的亮色主题 Solarized
+>
+> 修改侧边栏箭头，减小多个控件的margin和padding，减小tab高度，显示缩略图背景色，优化缩略图渐隐/渐现动画，增大各panel中字体和背景的对比度，高亮显示匹配中的文字，侧边栏文件hover高亮，并且去掉行号栏的背景色，看起来更加简洁
+
 ***
 
 ## Screenshots
@@ -28,6 +32,7 @@ You can customize the UI to your liking _(e.g camouflage workspace with the colo
 ![Screenshot](https://www.dropbox.com/s/xlg43vr2ikxogch/Agila%20Classic%20Theme.png?raw=1)
 
 #### Agila Light Theme
+
 ![Screenshot](https://www.dropbox.com/s/tmjpeas5iuvotbd/Agila%20Light%20Theme.png?raw=1)
 
 #### Agila Neon Theme

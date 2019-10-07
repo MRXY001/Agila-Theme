@@ -93,17 +93,17 @@
         "layer0.opacity": 1.0,
         "content_margin": 0,
         "tab_overlap": 0,
-        "tab_width": 220,
+        "tab_width": 200,
         "tab_min_width": 100,
-        "tab_height": 48,
+        "tab_height": 25,
         "mouse_wheel_switch": false
     },
-            // Tab set - option
-            {
-                "class": "tabset_control",
-                "settings": ["theme_agila_compact_tab"],
-                "tab_height": 40
-            },
+    // Tab set - option
+    {
+        "class": "tabset_control",
+        "settings": ["theme_agila_compact_tab"],
+        "tab_height": 40
+    },
     {
         "class": "tabset_control",
         "settings": ["enable_tab_scrolling"],
@@ -130,14 +130,14 @@
     {
         "class": "tab_control",
         "settings": ["show_tab_close_buttons"],
-        "content_margin": [15, 14, 15, 15] //tab element text and button margin
+        "content_margin": [15, 3, 15, 3] //tab element text and button margin
     },
-            // Tab set text - option
-            {
-                "class": "tab_control",
-                "settings": ["theme_agila_compact_tab"],
-                "content_margin": [15, 13, 15, 15] //tab element text and button margin
-            },
+    // Tab set text - option
+    {
+        "class": "tab_control",
+        "settings": ["theme_agila_compact_tab"],
+        "content_margin": [15, 3, 15, 3] //tab element text and button margin
+    },
     //Tab hover state
     {
         "class": "tab_control",
@@ -167,7 +167,7 @@
     // Tab close button
     {
         "class": "tab_close_button",
-        "content_margin": [8, 8],
+        "content_margin": [10, 10, 0, 0],
         "layer0.texture": "Agila Theme/assets/tab-close.png",
         "layer0.tint": [200, 200, 200], //tab close button
     },
@@ -202,42 +202,42 @@
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0
     },
-            // Tab dirty button - options
-            {
-                "class": "tab_close_button",
-                "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-                "settings": ["theme_agila_modified_tab_marker_white"],
-                "layer0.texture": "Agila Theme/assets/tab-dirty-white.png",
-                "layer0.tint": [255, 255, 255] //white theme
-            },
-            {
-                "class": "tab_close_button",
-                "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-                "settings": ["theme_agila_modified_tab_marker_gray"],
-                "layer0.texture": "Agila Theme/assets/tab-dirty-gray.png",
-                "layer0.tint": [134, 145, 165] //gray theme
-            },
-            {
-                "class": "tab_close_button",
-                "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-                "settings": ["theme_agila_modified_tab_marker_lightblue"],
-                "layer0.texture": "Agila Theme/assets/tab-dirty-lightblue.png",
-                "layer0.tint": [69, 183, 207] //light blue theme
-            },
-            {
-                "class": "tab_close_button",
-                "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-                "settings": ["theme_agila_modified_tab_marker_yellow"],
-                "layer0.texture": "Agila Theme/assets/tab-dirty-yellow.png",
-                "layer0.tint": [254, 201, 106] //yellow theme
-            },
-            {
-                "class": "tab_close_button",
-                "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-                "settings": ["theme_agila_modified_tab_marker_pink"],
-                "layer0.texture": "Agila Theme/assets/tab-dirty-pink.png",
-                "layer0.tint": [243, 103, 129] //pink theme
-            },
+        // Tab dirty button - options
+        {
+            "class": "tab_close_button",
+            "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+            "settings": ["theme_agila_modified_tab_marker_white"],
+            "layer0.texture": "Agila Theme/assets/tab-dirty-white.png",
+            "layer0.tint": [255, 255, 255] //white theme
+        },
+        {
+            "class": "tab_close_button",
+            "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+            "settings": ["theme_agila_modified_tab_marker_gray"],
+            "layer0.texture": "Agila Theme/assets/tab-dirty-gray.png",
+            "layer0.tint": [134, 145, 165] //gray theme
+        },
+        {
+            "class": "tab_close_button",
+            "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+            "settings": ["theme_agila_modified_tab_marker_lightblue"],
+            "layer0.texture": "Agila Theme/assets/tab-dirty-lightblue.png",
+            "layer0.tint": [69, 183, 207] //light blue theme
+        },
+        {
+            "class": "tab_close_button",
+            "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+            "settings": ["theme_agila_modified_tab_marker_yellow"],
+            "layer0.texture": "Agila Theme/assets/tab-dirty-yellow.png",
+            "layer0.tint": [254, 201, 106] //yellow theme
+        },
+        {
+            "class": "tab_close_button",
+            "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+            "settings": ["theme_agila_modified_tab_marker_pink"],
+            "layer0.texture": "Agila Theme/assets/tab-dirty-pink.png",
+            "layer0.tint": [243, 103, 129] //pink theme
+        },
 
     // Tab highlight button
     {
@@ -397,7 +397,7 @@
     {
         "class": "scroll_bar_control",
         "layer0.tint": [252, 240, 209], //scrollbar vertical control
-        "layer0.opacity": 1.0,
+        "layer0.opacity": 1,
         "layer0.inner_margin": 0,
         "blur": true
     },
@@ -406,7 +406,7 @@
         "class": "scroll_bar_control",
         "attributes": ["horizontal"],
         "layer0.tint": [252, 240, 209], //scrollbar horizontal control
-        "layer0.opacity": 1.0,
+        "layer0.opacity": 1,
         "layer0.inner_margin": 0,
         "blur": true
     },
@@ -415,13 +415,13 @@
         "class": "scroll_corner_control",
         "layer0.tint":[252, 240, 209], //scroll corner control
         "layer0.inner_margin": 0,
-        "layer0.opacity": 1.0
+        "layer0.opacity": 1
     },
     //Standard vertical scroll puck
     {
         "class": "puck_control",
         "layer0.tint":[248, 226, 166], //scroll drag/pluck
-        "layer0.opacity": 1.0,
+        "layer0.opacity": 1,
         "layer0.inner_margin": 0,
         "content_margin": [4,0],
         "blur": false
@@ -648,20 +648,21 @@
     {
         "class": "minimap_control",
         "settings": ["always_show_minimap_viewport"],
-        "viewport_color": [255, 255, 255, 15], //minimap control
+        "viewport_color": [240, 128, 128, 64], //minimap control
         "viewport_opacity": 1.0
     },
     {
         "class": "minimap_control",
         "settings": ["!always_show_minimap_viewport"],
-        "viewport_color": [255, 255, 255, 15], //minimap control
-        "viewport_opacity": { "target": 0.0, "speed": 10.0, "interpolation": "smoothstep" }
+        "viewport_color": [240, 128, 128, 64], //minimap control
+        "viewport_opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
     },
     {
         "class": "minimap_control",
         "attributes": ["hover"],
         "settings": ["!always_show_minimap_viewport"],
-        "viewport_opacity": 1.0
+        // "viewport_opacity": 0.5
+        "viewport_opacity": { "target": 1.0, "speed": 8.0, "interpolation": "smoothstep" }
     },
 
 
@@ -742,13 +743,13 @@
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
         "layer0.inner_margin": 0,
-        "content_margin": [0, 15, 0, 0]
+        "content_margin": [5, 5, 0, 0]
     },
     //Sidebar tree
     {
         "class": "sidebar_tree",
-        "row_padding": [35, 9],
-        "indent": 28,
+        "row_padding": [20, 4],
+        "indent": 20,
         "indent_offset": 0,
         "indent_top_level": false,
         "layer0.tint": [252, 240, 209], //sidebar tree
@@ -840,7 +841,7 @@
     //Sidebar entry
     {
         "class": "sidebar_label",
-        "color": [141, 141, 141], //sidebar entry default state
+        "color": [121, 121, 121], //sidebar entry default state
         "font.bold": false,
         "font.italic": false,
         "font.size": 13
@@ -865,12 +866,12 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "color": [141, 141, 141] //sidebar folder default state
+        "color": [161, 161, 161] //sidebar folder default state
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "color": [134, 145, 165] //sidebar entry hover state
+        "color": [243, 103, 129] //sidebar entry hover state
     },
     {
         "class": "sidebar_label",
@@ -1046,7 +1047,7 @@
 
 //------------------------------------------------------------------------------
 // TITLE BAR - Application title bar
-//------------------------------------------------------------------------------            
+//------------------------------------------------------------------------------
 {
     "class": "title_bar",
     "fg": [141, 141, 141],
@@ -1142,14 +1143,14 @@
     {
         "class": "quick_panel",
         "row_padding": 8,
-        "layer0.tint": [250, 234, 190], //quick panel section
+        "layer0.tint": [252, 240, 209], //quick panel section
         "layer0.opacity": 1.0,
         "dark_content": true
     },
     {
         "class": "quick_panel_row",
         "layer0.texture": "",
-        "layer0.tint": [250, 234, 190], //quick panel section
+        "layer0.tint": [252, 240, 209], //quick panel section
         "layer0.inner_margin": 8,
         "layer0.opacity": 1.0
     },
@@ -1157,20 +1158,20 @@
         "class": "quick_panel_row",
         "attributes": ["hover"],
         "layer0.texture": "",
-        "layer0.tint": [252, 240, 209] //quick panel row hover state
+        "layer0.tint": [243, 103, 129, 64] //quick panel row hover state
     },
     {
         "class": "quick_panel_row",
         "attributes": ["selected"],
         "layer0.texture": "",
-        "layer0.tint": [253, 246, 227] //quick panel row selected state
+        "layer0.tint": [243, 103, 129, 64] //quick panel row selected state
     },
     {
         "class": "quick_panel_label",
-        "fg": [159, 154, 157], //quick panel foreground
-        "match_fg": [239, 187, 44], //quick panel match label
-        "selected_fg": [159, 154, 157], //quick panel foreground
-        "selected_match_fg": [239, 187, 44] //quick panel selected match foreground
+        "fg": [89, 84, 87], //quick panel foreground
+        "match_fg": [243, 103, 129], //quick panel match label
+        "selected_fg": [89, 84, 87], //quick panel foreground
+        "selected_match_fg": [243, 103, 129] //quick panel selected match foreground
     },
             //Autocomplete - Quick Panel - options
             {
@@ -1255,10 +1256,10 @@
     },
     {
         "class": "auto_complete_label",
-        "fg": [159, 154, 157], //autocomplete foreground
-        "match_fg": [239, 187, 44], //autocomplete match label
-        "selected_fg": [159, 154, 157], //autocomplete foreground
-        "selected_match_fg": [239, 187, 44] //autocomplete match label
+        "fg": [89, 84, 87], //autocomplete foreground
+        "match_fg": [243, 103, 129], //autocomplete match label
+        "selected_fg": [89, 84, 87], //autocomplete foreground
+        "selected_match_fg": [243, 103, 129] //autocomplete match label
     },
             //Autocomplete - Code Completion - options
             {
@@ -1378,7 +1379,7 @@
         "layer0.texture": "Agila Theme/assets/icon-regex.png",
         "layer0.tint": [195, 195, 195], //bottom icon default state
         "layer0.opacity": 1.0,
-        "content_margin": [8, 8]
+        "content_margin": [5, 5]
     },
     {
         "class": "icon_regex",
@@ -1396,7 +1397,7 @@
         "layer0.texture": "Agila Theme/assets/icon-case.png",
         "layer0.tint": [195, 195, 195], //bottom icon default state
         "layer0.opacity": 1.0,
-        "content_margin": [8, 8]
+        "content_margin": [5, 5]
     },
     {
         "class": "icon_case",
@@ -1414,7 +1415,7 @@
         "layer0.texture": "Agila Theme/assets/icon-word.png",
         "layer0.tint": [195, 195, 195], //bottom icon default state
         "layer0.opacity": 1.0,
-        "content_margin": [8, 8]
+        "content_margin": [5, 5]
     },
     {
         "class": "icon_whole_word",
@@ -1437,7 +1438,7 @@
         "layer0.texture": "Agila Theme/assets/icon-context.png",
         "layer0.tint": [195, 195, 195], //bottom icon default state
         "layer0.opacity": 1.0,
-        "content_margin": [8, 8]
+        "content_margin": [5, 5]
     },
     {
         "class": "icon_context",
@@ -1455,7 +1456,7 @@
         "layer0.texture": "Agila Theme/assets/icon-buffer.png",
         "layer0.tint": [195, 195, 195], //bottom icon default state
         "layer0.opacity": 1.0,
-        "content_margin": [8, 8]
+        "content_margin": [5, 5]
     },
     {
         "class": "icon_use_buffer",
@@ -1496,7 +1497,7 @@
         "layer0.texture": "Agila Theme/assets/icon-wrap.png",
         "layer0.tint": [195, 195, 195], //bottom icon default state
         "layer0.opacity": 1.0,
-        "content_margin": [8, 8]
+        "content_margin": [5, 5]
     },
     {
         "class": "icon_wrap",
@@ -1514,7 +1515,7 @@
         "layer0.texture": "Agila Theme/assets/icon-selection.png",
         "layer0.tint": [195, 195, 195], //bottom icon default state
         "layer0.opacity": 1.0,
-        "content_margin": [8, 8]
+        "content_margin": [5, 5]
     },
     {
         "class": "icon_in_selection",
@@ -1537,7 +1538,7 @@
         "layer0.texture": "Agila Theme/assets/icon-preserve.png",
         "layer0.tint": [195, 195, 195], //bottom icon default state
         "layer0.opacity": 1.0,
-        "content_margin": [8, 8]
+        "content_margin": [5, 5]
     },
     {
         "class": "icon_preserve_case",
@@ -1560,7 +1561,7 @@
         "layer0.texture": "Agila Theme/assets/icon-highlight.png",
         "layer0.tint": [195, 195, 195], //bottom icon default state
         "layer0.opacity": 1.0,
-        "content_margin": [8, 8]
+        "content_margin": [5, 5]
     },
     {
         "class": "icon_highlight",
