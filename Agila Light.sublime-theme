@@ -648,21 +648,21 @@
     {
         "class": "minimap_control",
         "settings": ["always_show_minimap_viewport"],
-        "viewport_color": [240, 128, 128, 64], //minimap control
+        "viewport_color": [240, 128, 128, 96], //minimap control
         "viewport_opacity": 1.0
     },
     {
         "class": "minimap_control",
         "settings": ["!always_show_minimap_viewport"],
-        "viewport_color": [240, 128, 128, 64], //minimap control
-        "viewport_opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" }
+        "viewport_color": [240, 128, 128, 96], //minimap control
+        "viewport_opacity": { "target": 0.4, "speed": 2.0, "interpolation": "smoothstep" }
     },
     {
         "class": "minimap_control",
         "attributes": ["hover"],
         "settings": ["!always_show_minimap_viewport"],
         // "viewport_opacity": 0.5
-        "viewport_opacity": { "target": 1.0, "speed": 8.0, "interpolation": "smoothstep" }
+        "viewport_opacity": { "target": 0.8, "speed": 8.0, "interpolation": "smoothstep" }
     },
 
 
@@ -1158,7 +1158,7 @@
         "class": "quick_panel_row",
         "attributes": ["hover"],
         "layer0.texture": "",
-        "layer0.tint": [243, 103, 129, 64] //quick panel row hover state
+        "layer0.tint": [243, 103, 129, 32] //quick panel row hover state
     },
     {
         "class": "quick_panel_row",
